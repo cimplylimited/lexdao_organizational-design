@@ -16,10 +16,9 @@ Our infrastructure MVP will aim to satisfy the base cases of the membership requ
 ## Key Considerations
 Our current structure aims to use the [Unlock Protocol](https://unlock-protocol.com/) and [Hats Protocol](https://www.hatsprotocol.xyz/) for our ERC-721 and ERC-1155 structure, respectively.  For the ERC-721 framework, the expiration of memberships will be manipulated through store values in the contract rather than in the file metadata of the NFT.  This will create a permanent artifact and the NFT will remain in the user wallet *after* expiration.  
 
-In order for the 1155 to interact properly with the 721, we will need help from Hats to develop and deploy hooks to read the store value rather than simply looking for the presence of the NFT.  We will need the Hats contract to recognize the expiration parameter to determine eligibility for the initial gateway to the network.
-
 
 ## Technical Challenges
+In order for the 1155 to interact properly with the 721, we will need help from Hats to develop and deploy hooks to read the store value rather than simply looking for the presence of the NFT.  We will need the Hats contract to recognize the expiration parameter to determine eligibility for the initial gateway to the network.
 
 ## Key Partners
 This effort would not be possible without the key partnership and contributions of...**fill in**
